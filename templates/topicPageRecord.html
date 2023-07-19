@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>Topic, Webpage, Access Records forms</h1>
+        <form action="" method="POST">
+            {% csrf_token %}
+            <table>
+                {{TFO.as_table}}
+                {{PFO.as_table}}
+                {{RFO.as_table}}
+            </table><br>
+            <input type="submit" value="Submit All">
+        </form>
+    </center>
+</body>
+</html>

@@ -22,5 +22,6 @@ from APp.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('registration/',registration,name='registration'),
+    path('topicPageRecord/',topicPageRecord,name='topicPageRecord'),
 
 ] +  static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
